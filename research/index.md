@@ -19,6 +19,7 @@ All living cells rely on the establishment of particular gene expression program
 
 Transcription is not limited to regions annotated for producing known functional RNAs, but occurs virtually everywhere in the genome, a phenomenon conserved from bacteria to humans that is named pervasive or hidden transcription (see our reviews Villa & Porrua, 2022; and Jensen et al, 2013).
 
+![Alt text](lpl.github.io/images/Figure-1-2.jpeg)
 
 Figure 1 : Top : scheme of pervasive transcription events in red as opposed to “canonical” transcription, grey/blue. Bottom: yeast chromosome V snapshot of RNA polymerase II (RNAPII) occupancy detected by CRAC (see below) in comparison with annotated genes (grey). New, non-coding transcription units are annotated in red.
  
@@ -93,7 +94,7 @@ Marta Radman-Livaja has developed NChAP: (Nascent Chromatin Avidin Pulldown), a 
 While these maps shed unprecedented new light on the mechanisms governing genome replication they only represent cell population averages. In order to address questions like: 1) How many origins are activated in an individual cell?; 2) Does the activation of an origin depend on the activation of other origins on the same chromosome?; or 3) What are the velocities of individual forks?, we need to use single-molecule approached. To this end, we are currently developing methods based on Nanopore long-read sequencing technology to investigate single-molecule dynamics of replication origin activation and fork progression (including monitoring of replication/transcription conflicts) on nuclear and mitochondrial genomes of budding yeast.
 
 
-Figure 1: Comparison of replication dynamics parameters that can be measured by bulk NGS based techniques like NChAP (top panel) versus single molecule techniques like Long Read Nanopore Sequencing (bottom panel).
+Figure 8: Comparison of replication dynamics parameters that can be measured by bulk NGS based techniques like NChAP (top panel) versus single molecule techniques like Long Read Nanopore Sequencing (bottom panel).
 
 
 {% include section.html %}
