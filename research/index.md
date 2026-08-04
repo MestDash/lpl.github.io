@@ -19,31 +19,27 @@ All living cells rely on the establishment of particular gene expression program
 
 Transcription is not limited to regions annotated for producing known functional RNAs, but occurs virtually everywhere in the genome, a phenomenon conserved from bacteria to humans that is named pervasive or hidden transcription (see our reviews Villa & Porrua, 2022; and Jensen et al, 2013).
 
-![Alt text](lpl.github.io/images/Figure-1-2.jpeg)
+![Alt text](../images/Figure-1-2.jpeg 'Figure 1 : Top : scheme of pervasive transcription events in red as opposed to “canonical” transcription, grey/blue. Bottom: yeast chromosome V snapshot of RNA polymerase II (RNAPII) occupancy detected by CRAC (see below) in comparison with annotated genes (grey). New, non-coding transcription units are annotated in red.')
 
 Figure 1 : Top : scheme of pervasive transcription events in red as opposed to “canonical” transcription, grey/blue. Bottom: yeast chromosome V snapshot of RNA polymerase II (RNAPII) occupancy detected by CRAC (see below) in comparison with annotated genes (grey). New, non-coding transcription units are annotated in red.
  
-
 The extended distribution of non-coding transcription events needs to be controlled to avoid potentially disruptive interference with the expression of neighboring genes and other DNA-associated processes. Transcription termination has important roles in this context (see our review: Porrua & Libri, 2015), and studying the mechanisms involved in this process is one of our main interests. Transcription termination at the 3' end of protein-coding genes depends on a conserved multi-subunit complex called the CPF-CF complex. In budding yeast, the NNS complex, composed of the RNA-binding proteins Nrd1 and Nab3, and the helicase Sen1 terminates pervasive transcription events but also transcription of functional non-coding RNA genes such as snoRNAs. Moreover, the NNS complex promotes the degradation of non-coding RNAs by the nuclear exosome and its cofactor the TRAMP complex (figure 2).
 
+![Alt text](../images/Figure-2-1.jpeg)
 
 Figure 2: Transcription termination at mRNA-coding and non-coding genes in budding yeast (adapted from Porrua & Libri, 2015). A) During termination at mRNA-coding genes, components of the cleavage and polyadenylation factor (CPF) and cleavage factor (CF) complexes recognize specific sequences in the 3ʹ untranslated region (UTR) of the transcript. Upon cleavage of the transcript at the poly(A) site, poly(A) tails are added by the CPF-associated poly(A) polymerase Pap1. The 5ʹ end of the downstream portion of the transcript is then targeted by the Rat1 5ʹ–3ʹ exonuclease, which, according to the torpedo model, degrades the nascent RNA after cleavage and induces the release of the polymerase from the DNA. B) During termination at non-coding RNA (ncRNA) genes, the Nrd1–Nab3–Sen1 (NNS) complex is recruited to the elongation complex through the recognition of specific motifs on the nascent RNA by Nrd1 and Nab3. The RNA and DNA helicase Sen1 is then loaded onto the RNA, where it uses the energy of ATP hydrolysis to ‘catch up’ with Pol II and elicit termination. In a subsequent phase, the RNA-bound Nrd1–Nab3 heterodimer interacts with the TRAMP (Trf4–Air2–Mtr4) complex, which promotes polyadenylation of the transcript and its degradation or processing by the exosome.
 
 During the past years, we have extensively characterized the function of the NNS-complex. However, many aspects of the mechanisms of termination remain unclear, both for non-coding and mRNA coding genes. We use a technique that allows detecting in vivo the position of the RNAPII with single-nucleotide resolution (CRAC, Crosslinking Analysis of cDNAs, figure 3, Bohnsack et al., 2012; Challal et al., 2022) to  generate transcription maps in mutants of the NNS and the CPF-CF pathways.
 
+![Alt text](../images/Figure-3-1.jpg)
 
 Figure 3: Overview of the CRAC procedure (adapted from Challal et al., 2022). Living cells are irradiated with UV to cross-link proteins to RNA. The protein of interest (a Pol II subunit for transcription analysis, or another RNA binding protein, RBP) is purified under native conditions. A limited RNase digestion allows reduction of the size of the cross-linked RNA fragments. A second purification step under denaturing conditions is performed and linkers are added to the cross-linked RNA while the complex is still attached to the beads. After elution, the RNA–protein complex is further subjected to a denaturing, size-selection purification. The RNA from the complex is finally isolated, reverse-transcribed, and the cDNA library prepared by PCR amplification is sequenced using Illumina technology.
 
- 
-
 This allows comparative analyses of the different termination pathways and provides some information on the mechanism (together with some unexpected findings!).  We like to combine these high-resolution genome-wide analyses with in vitro biochemical (figure 4) and structural approaches to investigate the mechanisms of transcription termination and the interplay between the different termination pathways (as a typical example see our recent publication: Xie et al, 2022).
 
- 
-
+![Alt text](../images/Figure-4-1.jpeg)
 
 Figure 4: Example of in vitro assay to assess the mechanisms of transcription termination by Sen1. A) Gel proteins showing purified Sen1 and RNAPII used in these assays. B) Scheme of the transcription termination assay using transcription elongation complexes immobilized on streptavidin beads via a biotin on the template DNA. In the presence of nucleotides (NTPs) RNAPII transcribes until it encounters a pausing site. Transcription termination by Sen1 leads the release of paused RNAPIIs and nascent RNAs in the supernatant fraction, while paused elongation complexes remain associated to the beads. C) Representative denaturing gel to monitor the release of RNAs from the beads (B) to the supernatant (S) as a readout of the efficiency of transcription termination.
-
- 
 
 ## AXIS 2:
 ### Analysis of the impact of non-coding transcription in gene expression in different physiological conditions
@@ -53,10 +49,9 @@ Non-coding transcription events can regulate gene expression by affecting the fu
 
 We are interested in further exploring pathways of regulation by non-coding transcription in different physiological and stress conditions.  We detected many novel ncRNA transcription events in these conditions, some of which derive from activated bidirectional promoters, some from “solo” non-coding transcription units and some from decreased transcription termination efficiency (see our recent publication Haidara et al, 2022; and figure 5). We are pursuing the study of the impact of non-coding transcription in gene expression using a variety of approaches and bioinformatic tools.
 
+![Alt text](../images/Figure-5-1.jpg)
 
 Figure 5: Two examples of novel non-coding transcription units (in red) specifically expressed during osmotic stress that could regulate the expression of adjacent protein coding genes (black). Tracks indicate an RNAPII CRAC signal. Note that transcription of the upstream non-coding genes correlates with a decrease in the transcription signal of the indicated protein coding genes, suggesting repression of the downstream genes by transcriptional interference.
-
- 
 
 ## AXIS 3 :
 ### Characterization of the mechanisms responsible for the resolution of transcription-replication conflicts
@@ -66,9 +61,9 @@ The existence of transcription events that transcend the limits of annotated can
 
 When conflicts occur, the nascent RNA might hybridize to the template DNA strand, forming structures called R-loops. These structures can generate DNA damage and be genotoxic, and are generally removed by RNases H that degrade the RNA portion of the hybrid. Sen1 is also believed to play a role in limiting the formation of R-loops or resolving them once they form. We studied the role of R-loops and RNases H in regions of conflicts, and described a novel method for high resolution R-loop detection. We will pursue the studies of the mechanism of conflict resolution, the roles of RNases H and R-loops in these processes and the impact in genome stability.
 
+![Alt text](../images/Figure-6-1.jpg)
 
 Figure 6: The role of Sen1 in limiting pervasive transcription is not restricted to the termination of non-coding transcription units within the NNS complex. We show that Sen1 interacts with the replisome and RNAPIII to solve conflicts with replication forks and RNAP I in the rDNA and (top two schemes) around tRNA genes (center) and in the 5’-end of genes  (bottom).
- 
 
 ## AXIS 4 :
 ### Study of the molecular function of human senataxin and its involvement in neurodegeneration 
@@ -78,12 +73,9 @@ The human homologue of Sen1, senataxin (SETX), has attracted much attention beca
 
 In addition,  we are currently addressing the molecular basis of SETX-associated ALS in collaboration with S. Nedelec (IFM, Paris). To this end, we have generated human motor neurons from induced pluripotent stem cells harbouring ALS4 mutations and we are employing a variety of approaches to investigate the impact of these mutations on motor neuron physiology. Next, we will combine biochemical, proteomic and genomic approaches to unveil the deregulations responsible for motor neuron impairment in ALS4 (figure 7).
 
- 
-
+![Alt text](../images/Figure-7-1.jpg)
 
 Figure 7. Strategies employed in our group to address the molecular basis of senataxin-associated ALS. On one side we purify and characterize biochemically both the wild-type (wt) and mutant versions of SETX (mut) harboring ALS4-associated mutations to understand how the mutations affect the capacity of SETX to resolve R-loops and/or induce  transcription termination. In parallel we characterize phenotypically motor neurons harboring ALS4 mutations with a variety of cell biology, genomic and proteomic approaches.
-
- 
 
 ## AXIS 5 :
 ### Single-molecule DNA Replication Dynamics
@@ -93,9 +85,9 @@ Marta Radman-Livaja has developed NChAP: (Nascent Chromatin Avidin Pulldown), a 
 
 While these maps shed unprecedented new light on the mechanisms governing genome replication they only represent cell population averages. In order to address questions like: 1) How many origins are activated in an individual cell?; 2) Does the activation of an origin depend on the activation of other origins on the same chromosome?; or 3) What are the velocities of individual forks?, we need to use single-molecule approached. To this end, we are currently developing methods based on Nanopore long-read sequencing technology to investigate single-molecule dynamics of replication origin activation and fork progression (including monitoring of replication/transcription conflicts) on nuclear and mitochondrial genomes of budding yeast.
 
+![Alt text](../images/Figure-8-1.jpg)
 
 Figure 8: Comparison of replication dynamics parameters that can be measured by bulk NGS based techniques like NChAP (top panel) versus single molecule techniques like Long Read Nanopore Sequencing (bottom panel).
-
 
 {% include section.html %}
 
