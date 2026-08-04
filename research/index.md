@@ -19,7 +19,7 @@ All living cells rely on the establishment of particular gene expression program
 
 Transcription is not limited to regions annotated for producing known functional RNAs, but occurs virtually everywhere in the genome, a phenomenon conserved from bacteria to humans that is named pervasive or hidden transcription (see our reviews Villa & Porrua, 2022; and Jensen et al, 2013).
 
-![Alt text](../images/Figure-1-2.jpeg 'Figure 1 : Top : scheme of pervasive transcription events in red as opposed to “canonical” transcription, grey/blue. Bottom: yeast chromosome V snapshot of RNA polymerase II (RNAPII) occupancy detected by CRAC (see below) in comparison with annotated genes (grey). New, non-coding transcription units are annotated in red.')
+![Alt text](../images/Figure-1-2.jpeg)
 
 Figure 1 : Top : scheme of pervasive transcription events in red as opposed to “canonical” transcription, grey/blue. Bottom: yeast chromosome V snapshot of RNA polymerase II (RNAPII) occupancy detected by CRAC (see below) in comparison with annotated genes (grey). New, non-coding transcription units are annotated in red.
  
