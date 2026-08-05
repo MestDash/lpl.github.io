@@ -1,7 +1,7 @@
 ---
 name: Ambre Johan
 image: images/photo.jpg
-role: Doctoral Researcher
+role: PhD Student
 affiliation:
 aliases:
 links:
