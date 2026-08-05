@@ -42,7 +42,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {% include list.html
   data="members"
   component="portrait"
-  filter="role != 'principal-investigator' and role != 'postdoc' and role != 'phd'"
+  filter="role != 'principal-investigator' and role != 'postdoc' and role != 'phd' and role != 'programmer'"
 %}
 
 {% include section.html background="images/background.jpg" dark=true %}
