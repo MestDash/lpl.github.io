@@ -1,7 +1,7 @@
 ---
 name: Odil Porrua
 image: images/photo.jpg
-role: Principal Investigator
+role: principal-investigator
 description: Research Director, DR2
 affiliation:
 aliases:
