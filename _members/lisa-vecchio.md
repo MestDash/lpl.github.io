@@ -1,7 +1,7 @@
 ---
 name: Lisa Vecchio
 image: images/photo.jpg
-role: Doctoral Researcher
+role: phd
 affiliation:
 aliases:
 links:
