@@ -1,7 +1,7 @@
 ---
 name: Francisco Gutierrez Santiago
 image: images/photo.jpg
-role: Postdoctoral Researcher
+role: postdoc
 affiliation:
 aliases:
 links:
