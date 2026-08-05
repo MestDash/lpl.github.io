@@ -1,7 +1,8 @@
 ---
 name: Domenico Libri
 image: images/photo.jpg
-role: Reseqrch Director, CE
+role: Principal Investigator
+description: Research Director, CE
 affiliation:
 aliases:
 links:
