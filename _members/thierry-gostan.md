@@ -1,7 +1,8 @@
 ---
 name: Thierry Gostan
 image: images/photo.jpg
-role: Research Engineer
+role: programmer
+description: Research Engineer
 affiliation: 
 aliases:
 links:
