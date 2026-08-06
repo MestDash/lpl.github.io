@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: Libri - Porrua Lab
-subtitle: Mechanisms of genome expression and integrity
-description: An engaging 1-3 sentence description of your lab.
+subtitle:
+description: A really cool lab based in Montpellier, France.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
