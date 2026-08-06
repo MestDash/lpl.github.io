@@ -1,9 +1,9 @@
 ---
 ---
 
-# MestDash's Website
+# The Libri-Porrua Lab
 
-An engaging 1-3 sentence description of your lab.
+A really cool lab based in Montpellier, France.
 
 {% include section.html %}
 
