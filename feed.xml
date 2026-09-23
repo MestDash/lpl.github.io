@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://mestdash.github.io/lpl.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mestdash.github.io/lpl.github.io/" rel="alternate" type="text/html" /><updated>2026-08-06T10:01:52+00:00</updated><id>https://mestdash.github.io/lpl.github.io/feed.xml</id><title type="html">Libri - Porrua Lab</title><subtitle>A really cool lab based in Montpellier, France.</subtitle><entry><title type="html">Example post 3</title><link href="https://mestdash.github.io/lpl.github.io/2023/02/23/example-post-3.html" rel="alternate" type="text/html" title="Example post 3" /><published>2023-02-23T00:00:00+00:00</published><updated>2026-08-06T10:01:15+00:00</updated><id>https://mestdash.github.io/lpl.github.io/2023/02/23/example-post-3</id><content type="html" xml:base="https://mestdash.github.io/lpl.github.io/2023/02/23/example-post-3.html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>]]></content><author><name>john-doe</name></author><category term="biology," /><category term="medicine" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mestdash.github.io/lpl.github.io/images/photo.jpg" /><media:content medium="image" url="https://mestdash.github.io/lpl.github.io/images/photo.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example post 2</title><link href="https://mestdash.github.io/lpl.github.io/2021/09/30/example-post-2.html" rel="alternate" type="text/html" title="Example post 2" /><published>2021-09-30T00:00:00+00:00</published><updated>2026-08-06T10:01:15+00:00</updated><id>https://mestdash.github.io/lpl.github.io/2021/09/30/example-post-2</id><content type="html" xml:base="https://mestdash.github.io/lpl.github.io/2021/09/30/example-post-2.html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>]]></content><author><name>jane-smith</name></author><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary></entry><entry><title type="html">Example post 1</title><link href="https://mestdash.github.io/lpl.github.io/2019/01/07/example-post-1.html" rel="alternate" type="text/html" title="Example post 1" /><published>2019-01-07T00:00:00+00:00</published><updated>2026-08-06T10:01:15+00:00</updated><id>https://mestdash.github.io/lpl.github.io/2019/01/07/example-post-1</id><content type="html" xml:base="https://mestdash.github.io/lpl.github.io/2019/01/07/example-post-1.html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>]]></content><author><name>sarah-johnson</name></author><category term="biology" /><category term="medicine" /><category term="big data" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://mestdash.github.io/lpl.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mestdash.github.io/lpl.github.io/" rel="alternate" type="text/html" /><updated>2026-09-23T14:57:17+00:00</updated><id>https://mestdash.github.io/lpl.github.io/feed.xml</id><title type="html">Libri - Porrua Lab</title><subtitle>A really cool lab based in Montpellier, France.</subtitle><entry><title type="html">SFBBM annual congress</title><link href="https://mestdash.github.io/lpl.github.io/2026/09/16/sfbbm.html" rel="alternate" type="text/html" title="SFBBM annual congress" /><published>2026-09-16T00:00:00+00:00</published><updated>2026-09-23T14:50:34+00:00</updated><id>https://mestdash.github.io/lpl.github.io/2026/09/16/sfbbm</id><content type="html" xml:base="https://mestdash.github.io/lpl.github.io/2026/09/16/sfbbm.html"><![CDATA[<p>Photos from the SFBBM annual congress.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="SFBBM annual congress">
+    <img src="/lpl.github.io/images/sfbbm/sfbbm_2.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="SFBBM annual congress" loading="lazy" onerror="this.src = '/lpl.github.io/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      SFBBM annual congress
+
+    </figcaption>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="SFBBM annual congress">
+    <img src="/lpl.github.io/images/sfbbm/sfbbm_3.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="SFBBM annual congress" loading="lazy" onerror="this.src = '/lpl.github.io/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      SFBBM annual congress
+
+    </figcaption>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="SFBBM annual congress">
+    <img src="/lpl.github.io/images/sfbbm/sfbbm_4.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="SFBBM annual congress" loading="lazy" onerror="this.src = '/lpl.github.io/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      SFBBM annual congress
+
+    </figcaption>
+  
+</figure>]]></content><author><name></name></author><category term="biochemistry" /><category term="molecular biology" /><summary type="html"><![CDATA[Photos from the SFBBM annual congress.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mestdash.github.io/lpl.github.io/images/sfbbm/sfbbm_1.jpg" /><media:content medium="image" url="https://mestdash.github.io/lpl.github.io/images/sfbbm/sfbbm_1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

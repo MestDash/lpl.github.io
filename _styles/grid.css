@@ -38,6 +38,27 @@
   max-height: unset;
 }
 
+.grid[data-style=mosaic] {
+  display: block;
+  column-count: 3;
+  column-gap: 40px;
+}
+.grid[data-style=mosaic] > * {
+  width: 100%;
+  margin: 0 0 40px !important;
+  break-inside: avoid;
+}
+
+@media (max-width: 750px) {
+  .grid[data-style=mosaic] {
+    column-count: 2;
+  }
+}
+@media (max-width: 500px) {
+  .grid[data-style=mosaic] {
+    column-count: 1;
+  }
+}
 .grid > :where(h1, h2, h3, h4, h5, h6) {
   display: none;
 }
