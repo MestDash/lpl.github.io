@@ -4,6 +4,9 @@ subtitle:
 description: A really cool lab based in Montpellier, France.
 header: images/background.jpg
 footer: images/background.jpg
+# videos used as the header/footer backgrounds (background.jpg remains the poster/fallback)
+header-video: images/background_2.mp4
+footer-video: images/background_2.mp4
 proofer: false
 
 # site social media and other links

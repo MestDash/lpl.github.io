@@ -45,9 +45,9 @@ The team that makes the dream work.
   filter="role != 'principal-investigator' and role != 'postdoc' and role != 'phd' and role != 'programmer'"
 %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+{% include section.html %}
 
-Team photos.
+## Team photos
 
 {% include section.html %}
 
@@ -56,7 +56,12 @@ Team photos.
 {% include figure.html image="images/Untitled Folder/IMG-20260522-WA0000.jpg" %}
 {% include figure.html image="images/Untitled Folder/IMG-20260509-WA0000.jpg" %}
 {% include figure.html image="images/Untitled Folder/20250929_170313.jpg" %}
+{% include figure.html image="images/Untitled Folder/IMG-20260921-WA0005.jpg" %}
+{% include figure.html image="images/Untitled Folder/20260505_153855.jpg" %}
+{% include figure.html image="images/Untitled Folder/20260602_161523.jpg" %}
+{% include figure.html image="images/Untitled Folder/20260628_131008.jpg" %}
+{% include figure.html image="images/Untitled Folder/Snapchat-2108968296.jpg" %}
 
 {% endcapture %}
 
-{% include grid.html style="square" content=content %}
+{% include grid.html style="mosaic" content=content %}

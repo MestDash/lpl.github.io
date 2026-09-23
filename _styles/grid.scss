@@ -49,6 +49,31 @@ $one: 500px;
   }
 }
 
+// masonry-style mosaic: photos keep their aspect ratio and flow in columns
+.grid[data-style="mosaic"] {
+  display: block;
+  column-count: 3;
+  column-gap: 40px;
+
+  & > * {
+    width: 100%;
+    margin: 0 0 40px !important;
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: $two) {
+  .grid[data-style="mosaic"] {
+    column-count: 2;
+  }
+}
+
+@media (max-width: $one) {
+  .grid[data-style="mosaic"] {
+    column-count: 1;
+  }
+}
+
 .grid > :where(h1, h2, h3, h4, h5, h6) {
   display: none;
 }

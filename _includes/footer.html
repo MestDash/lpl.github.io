@@ -1,14 +1,29 @@
 {% assign image = page.footer | default: site.footer %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
+{% assign video = site.footer-video %}
+{% assign has-video = video != nil and page.footer == nil %}
 
 <footer
   class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
+  {% unless has-video %}style="--image: url('{{ image | relative_url | uri_escape }}')"{% endunless %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
   data-size="wide"
 >
+  {% if has-video %}
+    <video
+      class="background-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="{{ image | relative_url | uri_escape }}"
+      aria-hidden="true"
+    >
+      <source src="{{ video | relative_url | uri_escape }}" type="video/mp4">
+    </video>
+  {% endif %}
   <!--
     <div>
       Extra details like contact info or address

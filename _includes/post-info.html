@@ -23,7 +23,6 @@
   {% endif %}
 
   {% assign published = include.published | date: "%B %d, %Y" %}
-  {% assign updated = include.updated | date: "%B %d, %Y" %}
 
   {% if published %}
     <span data-tooltip="Originally published on">
@@ -31,15 +30,8 @@
       <span>{{ published }}</span>
     </span>
   {% endif %}
-
-  {% if updated and updated != "" and updated != published %}
-    <span data-tooltip="Last updated on">
-      {% include icon.html icon="fa-solid fa-clock-rotate-left" %}
-      <span>{{ updated }}</span>
-    </span>
-  {% endif %}
 </div>
 
 {% if include.tags %}
-  {% include tags.html tags=include.tags link="blog" %}
+  {% include tags.html tags=include.tags link="news" %}
 {% endif %}
