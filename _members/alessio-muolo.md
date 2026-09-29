@@ -1,6 +1,6 @@
 ---
 name: Alessio Muolo
-image: images/photo.jpg
+image: images/profile_photos/alessio-muolo.jpeg
 role: programmer
 description: Project Engineer
 affiliation:

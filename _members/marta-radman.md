@@ -1,6 +1,6 @@
 ---
 name: Marta Radman-Livaja
-image: images/photo.jpg
+image: images/profile_photos/marta-radman-livaja.jpeg
 role: postdoc
 description: Researcher
 affiliation:

@@ -1,6 +1,6 @@
 ---
 name: Marta Giannini
-image: images/photo.jpg
+image: images/profile_photos/marta-giannini.jpeg
 role: postdoc
 affiliation:
 aliases:

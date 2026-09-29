@@ -1,6 +1,6 @@
 ---
 name: Aude Carusi
-image: images/photo.jpg
+image: images/profile_photos/aude-carusi.jpeg
 role: postdoc
 description: Project Engineer
 affiliation:

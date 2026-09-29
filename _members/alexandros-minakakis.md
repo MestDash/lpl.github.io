@@ -1,6 +1,6 @@
 ---
 name: Alexandros Minakakis
-image: images/photo.jpg
+image: images/profile_photos/alexandros-minakakis.jpeg
 role: phd
 affiliation:
 aliases:

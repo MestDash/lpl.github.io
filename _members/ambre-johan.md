@@ -1,6 +1,6 @@
 ---
 name: Ambre Johan
-image: images/photo.jpg
+image: images/profile_photos/ambre-johan.jpeg
 role: phd
 affiliation:
 aliases:

@@ -1,6 +1,6 @@
 ---
 name: Arame Fall
-image: images/photo.jpg
+image: images/profile_photos/arame-fall.jpeg
 role: postdoc
 description: Project Engineer
 affiliation:
