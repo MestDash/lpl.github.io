@@ -60,6 +60,7 @@ header a {
 
 .title {
   font-size: var(--large);
+  font-weight: var(--bold);
 }
 
 .subtitle {
@@ -106,6 +107,7 @@ nav {
 
 nav > a {
   padding: 5px;
+  font-weight: var(--bold);
 }
 
 nav > a:hover {
