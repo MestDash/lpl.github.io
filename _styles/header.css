@@ -48,6 +48,7 @@ header a {
 
 .title {
   font-size: var(--large);
+  font-weight: var(--bold);
 }
 
 .subtitle {
@@ -94,6 +95,7 @@ nav {
 
 nav > a {
   padding: 5px;
+  font-weight: var(--bold);
 }
 
 nav > a:hover {
@@ -142,6 +144,39 @@ header[data-big] .title {
 }
 header[data-big] .subtitle {
   font-size: var(--large);
+}
+
+header.background:before {
+  opacity: 1;
+}
+
+header.background video.background-video {
+  opacity: 1;
+}
+
+header:not([data-big]).background video.background-video {
+  opacity: 0.6;
+}
+
+header[data-big] .home,
+header[data-big] nav {
+  position: relative;
+}
+
+header[data-big] .home:after,
+header[data-big] nav:after {
+  content: "";
+  position: absolute;
+  inset: -8px -16px;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--background);
+  background: color-mix(in srgb, var(--background) 20%, transparent);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  border-radius: 20px;
+  -webkit-mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
+  mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
 }
 
 /*# sourceMappingURL=header.css.map */
