@@ -186,24 +186,47 @@ header:not([data-big]).background video.background-video {
 }
 
 // frosted glass panels behind the banner text (logo+title and page links),
-// main page only (header[data-big]); soft radial fade so the edges have no hard boundary
+// main page only; every edge fades smoothly from frosted to transparent
 header[data-big] .home,
 header[data-big] nav {
   position: relative;
+  isolation: isolate; // keeps the glass above the video and below the text
 }
 
 header[data-big] .home:after,
 header[data-big] nav:after {
+  --fade: 40px; // width of the fade zone on every side
+
+  // eased (smoothstep-like) ramps so there is no visible "line" where the fade starts
+  --fade-in: transparent 0,
+    rgba(0, 0, 0, 0.16) calc(var(--fade) * 0.25),
+    rgba(0, 0, 0, 0.5) calc(var(--fade) * 0.5),
+    rgba(0, 0, 0, 0.84) calc(var(--fade) * 0.75),
+    #000 var(--fade);
+  --fade-out: #000 calc(100% - var(--fade)),
+    rgba(0, 0, 0, 0.84) calc(100% - var(--fade) * 0.75),
+    rgba(0, 0, 0, 0.5) calc(100% - var(--fade) * 0.5),
+    rgba(0, 0, 0, 0.16) calc(100% - var(--fade) * 0.25),
+    transparent 100%;
+
   content: "";
   position: absolute;
-  inset: -8px -16px;
+  // extends past the text so the text sits inside the fully frosted zone
+  inset: -40px -72px;
   z-index: -1;
   pointer-events: none;
   background: var(--background);
   background: color-mix(in srgb, var(--background) 20%, transparent);
   -webkit-backdrop-filter: blur(12px) saturate(140%);
   backdrop-filter: blur(12px) saturate(140%);
-  border-radius: 20px;
-  -webkit-mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
-  mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
+
+  // horizontal fade x vertical fade, intersected
+  -webkit-mask-image:
+    linear-gradient(to right, var(--fade-in), var(--fade-out)),
+    linear-gradient(to bottom, var(--fade-in), var(--fade-out));
+  mask-image:
+    linear-gradient(to right, var(--fade-in), var(--fade-out)),
+    linear-gradient(to bottom, var(--fade-in), var(--fade-out));
+  -webkit-mask-composite: source-in; // Safari / older Chrome
+  mask-composite: intersect; // standard
 }
