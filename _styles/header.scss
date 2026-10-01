@@ -138,6 +138,7 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 48px;
   padding: $big-padding 20px;
 
   @if $sticky {
@@ -195,7 +196,7 @@ header[data-big] nav {
 
 header[data-big] .home:after,
 header[data-big] nav:after {
-  --fade: 40px; // width of the fade zone on every side
+  --fade: 60px; // width of the fade zone on every side
 
   // eased (smoothstep-like) ramps so there is no visible "line" where the fade starts
   --fade-in: transparent 0,
