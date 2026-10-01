@@ -180,7 +180,7 @@ header[data-big] nav:after {
     transparent 100%;
   content: "";
   position: absolute;
-  inset: -40px -72px;
+  inset: -50px -80px;
   z-index: -1;
   pointer-events: none;
   background: var(--background);
