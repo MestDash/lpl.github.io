@@ -161,22 +161,35 @@ header:not([data-big]).background video.background-video {
 header[data-big] .home,
 header[data-big] nav {
   position: relative;
+  isolation: isolate;
 }
 
 header[data-big] .home:after,
 header[data-big] nav:after {
+  --fade: 40px;
+  --fade-in: transparent 0,
+    rgba(0, 0, 0, 0.16) calc(var(--fade) * 0.25),
+    rgba(0, 0, 0, 0.5) calc(var(--fade) * 0.5),
+    rgba(0, 0, 0, 0.84) calc(var(--fade) * 0.75),
+    #000 var(--fade);
+  --fade-out: #000 calc(100% - var(--fade)),
+    rgba(0, 0, 0, 0.84) calc(100% - var(--fade) * 0.75),
+    rgba(0, 0, 0, 0.5) calc(100% - var(--fade) * 0.5),
+    rgba(0, 0, 0, 0.16) calc(100% - var(--fade) * 0.25),
+    transparent 100%;
   content: "";
   position: absolute;
-  inset: -8px -16px;
+  inset: -40px -72px;
   z-index: -1;
   pointer-events: none;
   background: var(--background);
   background: color-mix(in srgb, var(--background) 20%, transparent);
   -webkit-backdrop-filter: blur(12px) saturate(140%);
   backdrop-filter: blur(12px) saturate(140%);
-  border-radius: 20px;
-  -webkit-mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
-  mask-image: radial-gradient(130% 160% at 50% 50%, #000 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, var(--fade-in), var(--fade-out)), linear-gradient(to bottom, var(--fade-in), var(--fade-out));
+  mask-image: linear-gradient(to right, var(--fade-in), var(--fade-out)), linear-gradient(to bottom, var(--fade-in), var(--fade-out));
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 /*# sourceMappingURL=header.css.map */
