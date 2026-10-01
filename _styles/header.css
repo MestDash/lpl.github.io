@@ -123,6 +123,7 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 48px;
   padding: 100px 20px;
   top: unset;
 }
@@ -166,7 +167,7 @@ header[data-big] nav {
 
 header[data-big] .home:after,
 header[data-big] nav:after {
-  --fade: 40px;
+  --fade: 60px;
   --fade-in: transparent 0,
     rgba(0, 0, 0, 0.16) calc(var(--fade) * 0.25),
     rgba(0, 0, 0, 0.5) calc(var(--fade) * 0.5),
