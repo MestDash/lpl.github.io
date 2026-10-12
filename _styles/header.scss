@@ -28,6 +28,12 @@ header a {
   text-decoration: none;
 }
 
+// transparent wrapper for logo/title + nav; on the main page it becomes
+// the box that the single frosted-ellipse panel is built around
+.banner-content {
+  display: contents;
+}
+
 .home {
   display: flex;
   justify-content: flex-start;
@@ -138,7 +144,6 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 48px;
   padding: $big-padding 20px;
 
   @if $sticky {
@@ -186,48 +191,67 @@ header:not([data-big]).background video.background-video {
   opacity: 0.6;
 }
 
-// frosted glass panels behind the banner text (logo+title and page links),
-// main page only; every edge fades smoothly from frosted to transparent
-header[data-big] .home,
-header[data-big] nav {
+// single frosted-glass ellipse behind the logo+title AND the page links,
+// main page only (header[data-big]); the gradient fades to fully transparent
+// before the box edge, so the ellipse dissolves into the banner (no hard edge)
+header[data-big] .banner-content {
   position: relative;
-  isolation: isolate; // keeps the glass above the video and below the text
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-header[data-big] .home:after,
-header[data-big] nav:after {
-  --fade: 60px; // width of the fade zone on every side
+header[data-big] .banner-content {
+  position: relative;
+  isolation: isolate; // glass stays above the video, below the text
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
-  // eased (smoothstep-like) ramps so there is no visible "line" where the fade starts
-  --fade-in: transparent 0,
-    rgba(0, 0, 0, 0.16) calc(var(--fade) * 0.25),
-    rgba(0, 0, 0, 0.5) calc(var(--fade) * 0.5),
-    rgba(0, 0, 0, 0.84) calc(var(--fade) * 0.75),
-    #000 var(--fade);
-  --fade-out: #000 calc(100% - var(--fade)),
-    rgba(0, 0, 0, 0.84) calc(100% - var(--fade) * 0.75),
-    rgba(0, 0, 0, 0.5) calc(100% - var(--fade) * 0.5),
-    rgba(0, 0, 0, 0.16) calc(100% - var(--fade) * 0.25),
-    transparent 100%;
+// Two stacked glass layers = progressive blur:
+//   :before  strong blur, only in the middle
+//   :after   light blur, reaching further out
+// so sharpness increases gradually toward the edge instead of switching.
+header[data-big] .banner-content:before,
+header[data-big] .banner-content:after {
+  // smoothstep falloff: no visible start or end of the fade
+  --fade: radial-gradient(
+    var(--shape),
+    #000 0%,
+    #000 30%,
+    rgba(0, 0, 0, 0.945) 40%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.61) 60%,
+    rgba(0, 0, 0, 0.39) 70%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.056) 90%,
+    transparent 100%
+  );
 
   content: "";
   position: absolute;
-  // extends past the text so the text sits inside the fully frosted zone
-  inset: -60px -90px;
+  inset: -110px -200px; // room so the text stays in the solid core
   z-index: -1;
   pointer-events: none;
-  background: var(--background);
-  background: color-mix(in srgb, var(--background) 20%, transparent);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-mask-image: var(--fade);
+  mask-image: var(--fade);
+}
 
-  // horizontal fade x vertical fade, intersected
-  -webkit-mask-image:
-    linear-gradient(to right, var(--fade-in), var(--fade-out)),
-    linear-gradient(to bottom, var(--fade-in), var(--fade-out));
-  mask-image:
-    linear-gradient(to right, var(--fade-in), var(--fade-out)),
-    linear-gradient(to bottom, var(--fade-in), var(--fade-out));
-  -webkit-mask-composite: source-in; // Safari / older Chrome
-  mask-composite: intersect; // standard
+// outer layer: light blur, wide fade (ends exactly at the box edge)
+header[data-big] .banner-content:after {
+  --shape: ellipse closest-side at 50% 50%;
+  background: color-mix(in srgb, var(--background) 20%, transparent);
+  -webkit-backdrop-filter: blur(6px) saturate(130%);
+  backdrop-filter: blur(6px) saturate(130%);
+}
+
+// inner layer: strong blur, smaller ellipse so it dissolves earlier
+header[data-big] .banner-content:before {
+  --shape: ellipse 38% 38% at 50% 50%;
+  background: color-mix(in srgb, var(--background) 15%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
 }
