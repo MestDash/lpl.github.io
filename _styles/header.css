@@ -16,6 +16,10 @@ header a {
   text-decoration: none;
 }
 
+.banner-content {
+  display: contents;
+}
+
 .home {
   display: flex;
   justify-content: flex-start;
@@ -123,7 +127,6 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 48px;
   padding: 100px 20px;
   top: unset;
 }
@@ -159,38 +162,58 @@ header:not([data-big]).background video.background-video {
   opacity: 0.6;
 }
 
-header[data-big] .home,
-header[data-big] nav {
+header[data-big] .banner-content {
   position: relative;
-  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-header[data-big] .home:after,
-header[data-big] nav:after {
-  --fade: 60px;
-  --fade-in: transparent 0,
-    rgba(0, 0, 0, 0.16) calc(var(--fade) * 0.25),
-    rgba(0, 0, 0, 0.5) calc(var(--fade) * 0.5),
-    rgba(0, 0, 0, 0.84) calc(var(--fade) * 0.75),
-    #000 var(--fade);
-  --fade-out: #000 calc(100% - var(--fade)),
-    rgba(0, 0, 0, 0.84) calc(100% - var(--fade) * 0.75),
-    rgba(0, 0, 0, 0.5) calc(100% - var(--fade) * 0.5),
-    rgba(0, 0, 0, 0.16) calc(100% - var(--fade) * 0.25),
-    transparent 100%;
+header[data-big] .banner-content {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header[data-big] .banner-content:before,
+header[data-big] .banner-content:after {
+  --fade: radial-gradient(
+    var(--shape),
+    #000 0%,
+    #000 30%,
+    rgba(0, 0, 0, 0.945) 40%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.61) 60%,
+    rgba(0, 0, 0, 0.39) 70%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.056) 90%,
+    transparent 100%
+  );
   content: "";
   position: absolute;
-  inset: -60px -90px;
+  inset: -110px -200px;
   z-index: -1;
   pointer-events: none;
-  background: var(--background);
+  -webkit-mask-image: var(--fade);
+  mask-image: var(--fade);
+}
+
+header[data-big] .banner-content:after {
+  --shape: ellipse closest-side at 50% 50%;
   background: color-mix(in srgb, var(--background) 20%, transparent);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  backdrop-filter: blur(12px) saturate(140%);
-  -webkit-mask-image: linear-gradient(to right, var(--fade-in), var(--fade-out)), linear-gradient(to bottom, var(--fade-in), var(--fade-out));
-  mask-image: linear-gradient(to right, var(--fade-in), var(--fade-out)), linear-gradient(to bottom, var(--fade-in), var(--fade-out));
-  -webkit-mask-composite: source-in;
-  mask-composite: intersect;
+  -webkit-backdrop-filter: blur(6px) saturate(130%);
+  backdrop-filter: blur(6px) saturate(130%);
+}
+
+header[data-big] .banner-content:before {
+  --shape: ellipse 38% 38% at 50% 50%;
+  background: color-mix(in srgb, var(--background) 15%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
 }
 
 /*# sourceMappingURL=header.css.map */
