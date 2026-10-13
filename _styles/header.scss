@@ -233,7 +233,7 @@ header[data-big] .banner-content:after {
 
   content: "";
   position: absolute;
-  inset: -110px -200px; // room so the text stays in the solid core
+  inset: -110px -275px; // room so the text stays in the solid core
   z-index: -1;
   pointer-events: none;
   -webkit-mask-image: var(--fade);
