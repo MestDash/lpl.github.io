@@ -1,0 +1,17 @@
+<figure class="figure">
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ include.youtube_id }}"
+      title="{{ include.caption | default: "video" | regex_strip }}"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% if include.caption %}
+    <figcaption class="figure-caption">
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    </figcaption>
+  {% endif %}
+</figure>
